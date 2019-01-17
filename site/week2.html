@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Introduction to CSS3</title>
+	<style>
+		body{
+			font-family: Calibri,Arial,Helvetica, serif;
+			background-color: #d0ffd0;
+			color: blue;
+			font-size: 18px;
+		}
+		h1,h2,h3 {
+			text-align: center;
+			color: red;
+		}
+		h4 {
+			text-align: left;
+			color: green;
+		}
+		xmp{
+			color:black;
+			background-color: white;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<section id="heading">
+		<h1>Introduction to CSS3</h1>
+		<hr>
+		<p>In this week, we introduce the Cascading Style Sheets (CSS3). We will look at a brief introduction to this alongside the concept of <b>selectors</b> in HTML and the usage of the stylesheets to format web pages.</p>
+	</section>
+	<section id="notes">
+		<h2>Notes</h2>
+		<ol>
+			<li><h4>Selectors</h4></li>
+			Selectors in HTML refer to elements that can be used to reference a particular section of the page in order to apply styles to it. The main selectors used in HTML include:
+			<ul>
+				<li>HTML elements: By this we refer to the element associated with the tag we are targetting. Any formatting defined for a given element will be applied to all areas where the associated tag is use.</li>
+				<li>Class: The class of a given section in a HTML is usually set as an attribute of a tag and written as part of the opening tag. For example: <xmp> <htmltag class="test-class">sample test for htmltag </htmltag></xmp> The class name can be reused with several tags so as to apply similar formatting to these sections.</li>
+				<li>ID: This selector is used to uniquely reference a particular section of the page. It is useful when we desire to apply a specific formatting to a certain section of our page. The HTML id attribute is declared exactly like the class attribute with the class keyword replaced by <b>id</b>.</li>
+			</ul>
+			<li><h4>Defining styles</h4></li>
+			The format for defining a style in stylesheets is as follows:<xmp>
+			selector{
+				style-name: value;
+				<!-- Other styles can be found here-->
+			}
+			</xmp>
+			It should be noted that a particular style defination can contain numerous styles but on the condition that they are distinct.
+			<p>When writing your code, the best practice is to place all the styles inside the style tag in usually placed in the head of the html document.</p>
+			<p>The format for defining a style using a HTML element as selector is as follows:<xmp>
+			element {
+				style-name: value;
+				<!-- Other styles may be defined here -->
+			}
+			</xmp></p>
+			To define the style using a class as selector, the format is as follows:<xmp>
+			.class-name {
+				style-name: value;
+				<!-- Other styles may be defined here -->
+			}
+			</xmp> In the above illustration, it should be noted that the name of the class does not contain the leading point. That is, the name of the class is <em>class-name</em> but the point is added to indicate that we are selecting a class.</p>
+			<p>For style definition using the id attribute, we have the following format:<xmp>
+			#id {
+				style-name: value;
+				<!-- Other styles may be defined here -->
+			}
+			</xmp></p>
+			In the above notation just like in the class definition, the id is actually <em>id</em>. The # only indicates the fact that our selector is an id attribute.
+			<li><h4>Combining selectors</h4></li>
+			<p>Several selectors can be used together especially when it comes to using elements as selectors. However, it is needless to combine id attributes since the latter are specific.</p>
+			<p>It is also possible to define a style for several selectors. In such a situation, we write all the selectors before the selectors before the opening curly bracket separated by commas.</p>
+		</ol>
+	</section>
+</body>
+</html>
