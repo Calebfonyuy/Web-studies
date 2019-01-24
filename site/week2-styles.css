@@ -1,0 +1,73 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	font-family: Calibri,Arial,Helvetica, serif;
+	background-color: #d0ffd0;
+	color: blue;
+	font-size: 18px;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1,h2,h3 {
+	text-align: center;
+	color: red;
+}
+h1 {
+	font-size: 70px;
+	text-transform: uppercase;
+	text-align: center;
+	word-spacing: 50px;
+}
+#heading>p {
+	border:3px;
+	border-style: dotted;
+	border-color: yellow;
+	color:black;
+}
+
+ol{
+	list-style-position:inside;
+	list-style: none;
+}
+
+#notes>ol>li{
+	width:49%;
+	min-height: 410px;
+	border: 4px solid black;
+	margin: 1px;
+	padding: 10px;
+	float: left;
+}
+
+#combine{
+	
+}
+#notes>ol{
+	float: left;
+	clear: both;
+}
+#notes>h2{
+	color: orange;
+	background-color: cornsilk;
+}
+#notes h4 {
+	text-align: left;
+	color: green;
+}
+xmp{
+	color:black;
+	background-color: white;
+	font-weight: bold;
+	white-space: pre-wrap;
+}
+footer{
+	color: red;
+	text-align: center;
+	background: yellow;
+}
